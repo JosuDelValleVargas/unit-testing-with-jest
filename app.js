@@ -25,11 +25,11 @@ const fromEuroToDollar = function (euro){
 }
 
 const fromDollarToYen = function (dollar){
-    return dollar* oneEuroIs.JPY ;
+    return dollar * (oneEuroIs.JPY/oneEuroIs.USD)  ;
 }
 
 const fromYenToPound = function (yen){
-    return yen* oneEuroIs.GBP ;
+    return yen * (oneEuroIs.GBP / oneEuroIs.JPY) ;
 }
 
 console.log(fromEuroToDollar());
